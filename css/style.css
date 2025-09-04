@@ -10,7 +10,7 @@ body {
 
 @keyframes descanso {
   0% {
-    background-image: url(../../asset/index/amigos/amigos4.jpg);
+    background-image: url(../asset/index/amigos/amigos4.jpg);
     width: 20rem;
     height: 20rem;
     background-size: cover;
@@ -18,7 +18,7 @@ body {
     background-position: center;
   }
   25% {
-    background-image: url(../../asset/index/amigos/amigos2.jpg);
+    background-image: url(../asset/index/amigos/amigos2.jpg);
     width: 20rem;
     height: 20rem;
     background-size: cover;
@@ -26,7 +26,7 @@ body {
     background-position: center;
   }
   50% {
-    background-image: url(../../asset/index/amigos/amigos1.jpeg);
+    background-image: url(../asset/index/amigos/amigos1.jpeg);
     width: 20rem;
     height: 20rem;
     background-size: cover;
@@ -34,7 +34,7 @@ body {
     background-position: center;
   }
   75% {
-    background-image: url(../../asset/index/amigos/amigos2.jpg);
+    background-image: url(../asset/index/amigos/amigos2.jpg);
     width: 20rem;
     height: 20rem;
     background-size: cover;
@@ -42,7 +42,7 @@ body {
     background-position: center;
   }
   100% {
-    background-image: url(../../asset/index/amigos/amigos3.jpg);
+    background-image: url(../asset/index/amigos/amigos3.jpg);
     width: 20rem;
     height: 20rem;
     background-size: cover;
@@ -148,7 +148,7 @@ header {
   margin: 2rem;
 }
 .content .imagenes .img__left {
-  background-image: url("../../asset/index/playa.jpeg");
+  background-image: url("../asset/index/playa.jpeg");
   width: 20rem;
   height: 15rem;
   background-position: center;
@@ -174,7 +174,7 @@ header {
   color: black;
 }
 .content .imagenes .img__center {
-  background-image: url("../../asset/index/cultural.jpg");
+  background-image: url("../asset/index/cultural.jpg");
   width: 20rem;
   height: 15rem;
   background-position: center;
@@ -200,7 +200,7 @@ header {
   color: black;
 }
 .content .imagenes .img__right {
-  background-image: url("../../asset/index/aventura.jpg");
+  background-image: url("../asset/index/aventura.jpg");
   width: 20rem;
   height: 15rem;
   background-position: center;
