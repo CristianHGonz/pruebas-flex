@@ -1,0 +1,22 @@
+.main__container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "content" 
+    "pie"; 
+     grid-template-rows: 2rem 3rem auto 3rem;
+    
+    header{
+        grid-area: header;
+        
+    }
+    .content{
+        grid-area: content;
+       
+    }
+    .pie{
+        grid-area: pie;
+       
+    }
+}

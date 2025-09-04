@@ -1,0 +1,190 @@
+
+
+@media screen and (min-width: 767px) {
+
+.header__logo > img{
+  width: 60%;
+    
+    
+}
+.nav__bar{
+    .nav__links{
+      display: flex;
+                 flex-direction: row;//aca
+            .nav__item{
+                .nav__link{
+                  margin: 0 .25rem;
+                    font-size: 20px; 
+                    padding: 1rem;               
+                }
+              }
+        }
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  
+    
+    .title__animation {
+    margin: 2rem auto 0 auto;
+      width: 80%;
+      
+    }
+    .title__index {
+          text-align: center;
+                  }
+        .subtitle__index {
+          font-size: 1.5rem;
+        }
+        .imagenes{
+          flex-direction: row;
+          flex-wrap: wrap;
+            .img__left{
+              width: 13rem;
+              height: 20rem;
+              background-position: right;
+                .img__left--text{
+                  width: 7rem;
+                  height: 5rem;
+                  margin: 17rem auto  0 auto;
+                }
+                 }
+                 .img__center{
+               width: 13rem;
+               height: 20rem;
+               background-position: left;
+                .img__center--text{
+                  margin: 17rem auto  0 auto;
+              }
+         
+          }
+                .img__right{
+                  width: 13rem;
+                  height: 20rem;
+                  border-radius: 1rem;
+                    .img__right--text{
+                     margin: 17rem auto  0 auto;
+                    }
+    }
+    }
+  .nosotros {
+  margin-top: 1rem;
+  width: 80%;
+
+  .card__amigos {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    animation: descanso 20s infinite;
+  }
+}
+
+.text__amigos {
+  margin: 1.1rem auto 1rem;
+  font-size: 1.25rem;
+  text-align: justify;
+  
+}
+}
+}
+@media screen and (min-width: 1024px) {
+.header__logo {
+   width: 30%;
+}
+.content {
+  
+  .imagenes{
+    flex-wrap: wrap;
+    .img__left{
+      width: 18rem;
+      height: 25rem;
+         .img__left--text{
+                  margin: 22rem auto  0 auto;
+                }
+              }
+    .img__center{
+      width: 18rem;
+      height: 25rem;
+        .img__center--text{
+                  margin: 22rem auto  0 auto;
+              }
+    }
+    .img__right{
+                  width: 18rem;
+                  height: 25rem;
+                  
+                    .img__right--text{
+                     margin: 22rem auto  0 auto;
+                    }
+    }
+  }
+  .nosotros {
+  display: flex;
+  flex-direction: row;
+  .card__amigos {
+    min-width: 25rem;
+    min-height: 20rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    animation: descanso 20s infinite;
+    flex: 1;
+  }
+}
+
+.text__amigos {
+  margin: auto 2rem;
+  font-size: 1.25rem;
+  text-align: justify;
+  flex: 1;
+  
+}
+.marcas {
+    flex-wrap: nowrap;
+  justify-content: center;
+  gap: .5rem;
+}
+}
+  .footer__container {
+  flex-direction: row;
+  
+}
+.footer__left {
+  flex: 1;
+  .logo__empresa img {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+  }
+  p {
+    display: none;
+  }
+}
+.footer__center {
+  flex: 2;
+  p {
+    text-align: center;
+  }
+  .title__footer {
+    display: none;
+  }
+}
+.footer__right {
+  flex: 1;
+  p {
+    font-weight: 300;
+    margin: 1rem;
+    font-size: 16px;
+  }
+  li {
+    list-style: none;
+    font-size: 14px;
+    margin: 5px;
+    text-align: center;
+  }
+  strong {
+    text-decoration: none;
+  }
+}
+
+}

@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+@keyframes descanso {
+  0% {
+    background-image: url(../../asset/index/amigos/amigos4.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  25% {
+    background-image: url(../../asset/index/amigos/amigos2.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  50% {
+    background-image: url(../../asset/index/amigos/amigos1.jpeg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  75% {
+    background-image: url(../../asset/index/amigos/amigos2.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  100% {
+    background-image: url(../../asset/index/amigos/amigos3.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@keyframes titulo {
+  from {
+    transform: translatex(15%);
+  }
+  to {
+    transform: translate(-25%);
+  }
+}
+.main__container {
+  display: grid;
+  grid-template-areas: "header" "navbar" "content" "pie";
+  grid-template-rows: 2rem 3rem auto 3rem;
+}
+.main__container header {
+  grid-area: header;
+}
+.main__container .content {
+  grid-area: content;
+}
+.main__container .pie {
+  grid-area: pie;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(360deg, #126485, #00b8c9);
+  height: 6rem;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.header__logo > img {
+  width: 75%;
+}
+
+.nav__bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  text-align: end;
+  width: 100%;
+  position: sticky;
+  top: 3%;
+}
+.nav__bar .nav__links {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+.nav__bar .nav__links .nav__item {
+  list-style: none;
+}
+.nav__bar .nav__links .nav__item .nav__link {
+  text-decoration: none;
+  margin: 0 0.25rem;
+  font-size: 16px;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content .title__animation {
+  margin-top: 2rem;
+  overflow: hidden;
+  background: radial-gradient(circle, #2c89ad, #00b8c9);
+  border-radius: 1rem;
+}
+.content .title__index {
+  text-align: center;
+  font-size: 1.5rem;
+  animation: titulo 10s infinite alternate ease-in-out;
+}
+.content .subtitle__index {
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  margin: 1rem;
+}
+.content .imagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+.content .imagenes .img__left {
+  background-image: url("../../asset/index/playa.jpeg");
+  width: 20rem;
+  height: 15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+.content .imagenes .img__left .img__left--text {
+  background-color: rgba(99, 41, 235, 0.5);
+  width: 7rem;
+  height: 5rem;
+  border-radius: 1rem;
+  margin: 12rem auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+.content .imagenes .img__left .img__left--text:hover {
+  color: black;
+}
+.content .imagenes .img__center {
+  background-image: url("../../asset/index/cultural.jpg");
+  width: 20rem;
+  height: 15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+.content .imagenes .img__center .img__center--text {
+  background-color: rgba(235, 41, 41, 0.5);
+  width: 7rem;
+  height: 5rem;
+  border-radius: 1rem;
+  margin: 12rem auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+.content .imagenes .img__center .img__center--text:hover {
+  color: black;
+}
+.content .imagenes .img__right {
+  background-image: url("../../asset/index/aventura.jpg");
+  width: 20rem;
+  height: 15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+.content .imagenes .img__right .img__right--text {
+  background-color: rgba(41, 235, 138, 0.5);
+  width: 7rem;
+  height: 5rem;
+  border-radius: 1rem;
+  margin: 12rem auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+.content .imagenes .img__right .img__right--text:hover {
+  color: black;
+}
+.content .nosotros {
+  margin-top: 3rem;
+  width: 100%;
+}
+.content .nosotros .card__amigos {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem;
+  animation: descanso 20s infinite;
+  margin: 0.5rem auto 1rem;
+}
+.content .text__amigos {
+  grid-area: text__amigos;
+  margin: 0.5rem auto 1rem;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.title__marcas {
+  margin: 2rem auto 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.marcas {
+  flex-wrap: wrap;
+}
+.marcas img {
+  width: 12rem;
+  height: 10rem;
+  object-fit: contain;
+  border-radius: 1rem;
+  margin: 1.5rem;
+}
+
+.social__media {
+  display: flex;
+  flex-flow: column wrap;
+  position: fixed;
+  top: 45%;
+  right: 0;
+}
+.social__media .social__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: 0.5s;
+}
+
+.social__icon:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(360deg, #126485, #00b8c9);
+  color: #fff;
+}
+
+.footer__left {
+  display: flex;
+  flex-flow: column wrap;
+  place-items: center;
+  text-align: center;
+}
+.footer__left .logo__empresa img {
+  width: 10rem;
+  height: 5rem;
+}
+.footer__left p {
+  margin: 1rem;
+}
+
+.footer__center {
+  margin: 0.5rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: #126485 0px 4px 8px 0px, #126485 0px 6px 20px 0px;
+}
+.footer__center p {
+  margin: 0 1rem;
+  text-align: center;
+}
+.footer__center .title__footer {
+  display: none;
+  margin: 1rem;
+}
+
+.footer__right {
+  margin: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.footer__right p {
+  font-weight: 400;
+  margin: 1rem;
+  font-size: 16px;
+}
+.footer__right li {
+  list-style: none;
+  font-size: 14px;
+  margin: 5px;
+}
+.footer__right strong {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 767px) {
+  .header__logo > img {
+    width: 60%;
+  }
+  .nav__bar .nav__links {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav__bar .nav__links .nav__item .nav__link {
+    margin: 0 0.25rem;
+    font-size: 20px;
+    padding: 1rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .title__animation {
+    margin: 2rem auto 0 auto;
+    width: 80%;
+  }
+  .content .title__index {
+    text-align: center;
+  }
+  .content .subtitle__index {
+    font-size: 1.5rem;
+  }
+  .content .imagenes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .content .imagenes .img__left {
+    width: 13rem;
+    height: 20rem;
+    background-position: right;
+  }
+  .content .imagenes .img__left .img__left--text {
+    width: 7rem;
+    height: 5rem;
+    margin: 17rem auto 0 auto;
+  }
+  .content .imagenes .img__center {
+    width: 13rem;
+    height: 20rem;
+    background-position: left;
+  }
+  .content .imagenes .img__center .img__center--text {
+    margin: 17rem auto 0 auto;
+  }
+  .content .imagenes .img__right {
+    width: 13rem;
+    height: 20rem;
+    border-radius: 1rem;
+  }
+  .content .imagenes .img__right .img__right--text {
+    margin: 17rem auto 0 auto;
+  }
+  .content .nosotros {
+    margin-top: 1rem;
+    width: 80%;
+  }
+  .content .nosotros .card__amigos {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    animation: descanso 20s infinite;
+  }
+  .content .text__amigos {
+    margin: 1.1rem auto 1rem;
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__logo {
+    width: 30%;
+  }
+  .content .imagenes {
+    flex-wrap: wrap;
+  }
+  .content .imagenes .img__left {
+    width: 18rem;
+    height: 25rem;
+  }
+  .content .imagenes .img__left .img__left--text {
+    margin: 22rem auto 0 auto;
+  }
+  .content .imagenes .img__center {
+    width: 18rem;
+    height: 25rem;
+  }
+  .content .imagenes .img__center .img__center--text {
+    margin: 22rem auto 0 auto;
+  }
+  .content .imagenes .img__right {
+    width: 18rem;
+    height: 25rem;
+  }
+  .content .imagenes .img__right .img__right--text {
+    margin: 22rem auto 0 auto;
+  }
+  .content .nosotros {
+    display: flex;
+    flex-direction: row;
+  }
+  .content .nosotros .card__amigos {
+    min-width: 25rem;
+    min-height: 20rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    animation: descanso 20s infinite;
+    flex: 1;
+  }
+  .content .text__amigos {
+    margin: auto 2rem;
+    font-size: 1.25rem;
+    text-align: justify;
+    flex: 1;
+  }
+  .content .marcas {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .footer__container {
+    flex-direction: row;
+  }
+  .footer__left {
+    flex: 1;
+  }
+  .footer__left .logo__empresa img {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+  }
+  .footer__left p {
+    display: none;
+  }
+  .footer__center {
+    flex: 2;
+  }
+  .footer__center p {
+    text-align: center;
+  }
+  .footer__center .title__footer {
+    display: none;
+  }
+  .footer__right {
+    flex: 1;
+  }
+  .footer__right p {
+    font-weight: 300;
+    margin: 1rem;
+    font-size: 16px;
+  }
+  .footer__right li {
+    list-style: none;
+    font-size: 14px;
+    margin: 5px;
+    text-align: center;
+  }
+  .footer__right strong {
+    text-decoration: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

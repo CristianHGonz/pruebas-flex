@@ -1,0 +1,51 @@
+@keyframes descanso {
+  0% {
+    background-image: url(../../asset/index/amigos/amigos4.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  25% {
+    background-image: url(../../asset/index/amigos/amigos2.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  50% {
+    background-image: url(../../asset/index/amigos/amigos1.jpeg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  75% {
+    background-image: url(../../asset/index/amigos/amigos2.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  100% {
+    background-image: url(../../asset/index/amigos/amigos3.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ }
+
+ @keyframes titulo {
+  from {
+    transform: translatex(15%);
+  }
+  to {
+    transform: translate(-25%);
+  }
+}

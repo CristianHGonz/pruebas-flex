@@ -1,0 +1,130 @@
+.content{
+  display: flex;
+  flex-direction: column;
+    
+    .title__animation {
+      margin-top: 2rem;
+      overflow: hidden;
+      background: radial-gradient(circle, #2c89ad, #00b8c9);
+      border-radius: 1rem;
+      }
+        .title__index {
+          text-align: center;
+          font-size: 1.5rem;
+          animation: titulo 10s infinite alternate ease-in-out;
+          }
+        .subtitle__index {
+        text-align: center;
+        font-size: 2rem;
+        font-style: italic;
+        margin: 1rem;
+        }
+     
+        .imagenes{
+          display: flex;;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          margin: 2rem ;
+          
+    
+            .img__left{
+              background-image: url("../../asset/index/playa.jpeg");
+              width: 20rem;
+              height: 15rem;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              border-radius: 1rem;
+              margin-bottom: 3rem;
+                .img__left--text{
+                  background-color: rgba($color: #6329eb4f, $alpha: 0.5);
+                  width: 7rem;
+                  height: 5rem;
+                  border-radius: 1rem;
+                  margin: 12rem auto  0 auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white; 
+                  font-weight: 800;
+                  cursor: pointer;
+                  }
+         .img__left--text:hover{
+         color: black
+       }
+                 }
+            .img__center{
+              background-image: url("../../asset/index/cultural.jpg");
+              width: 20rem;
+              height: 15rem;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              border-radius: 1rem;
+              margin-bottom: 3rem;
+                .img__center--text{
+                  background-color: rgba($color: #eb29294f, $alpha: 0.5);
+                  width: 7rem;
+                  height: 5rem;
+                  border-radius: 1rem;
+                  margin: 12rem auto  0 auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white; 
+                  font-weight: 800;
+                  cursor: pointer;
+              }
+         .img__center--text:hover{
+        color: black
+       }
+          }
+                .img__right{
+                  background-image: url("../../asset/index/aventura.jpg");
+                  width: 20rem;
+                  height: 15rem;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  border-radius: 1rem;
+                  margin-bottom: 3rem;
+                    .img__right--text{
+                      background-color: rgba($color: #29eb8a4f, $alpha: 0.5);
+                      width: 7rem;
+                      height: 5rem;
+                      border-radius: 1rem;
+                      margin: 12rem auto  0 auto;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: white; 
+                      font-weight: 800;
+                      cursor: pointer;
+                    }
+       .img__right--text:hover{
+         color: black
+       }
+    }
+    }
+  .nosotros {
+  margin-top: 3rem;
+  width: 100%;
+  .card__amigos {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    animation: descanso 20s infinite;
+    margin: 0.5rem auto 1rem;
+  }
+}
+
+.text__amigos {
+  grid-area: text__amigos;
+  margin: 0.5rem auto 1rem;
+  font-size: 1.5rem;
+  text-align: justify;
+  
+}
+}
